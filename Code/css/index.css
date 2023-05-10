@@ -1,0 +1,352 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 304vh;
+    margin: 0;
+    background: #FAFAFA;
+    overflow-x: hidden;
+}
+/*Начало css для хедера, и начинается с задания абсолютной позиции для его элементов*/
+.backImage {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+header {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+    top: 0;
+}
+#clock {
+    width: 200px;
+    background: #423030;
+    border-radius: 0 0 0 200px;
+    text-align: center;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 40px;
+    position: relative;
+    float: right;
+}
+nav, .greetings {
+    position: absolute;
+}
+/*Для отображения меню использовал flex, на данный момент поддерживается везде за исключение IE*/
+nav{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 52px;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+/*Кнопки - это гиперссылки с фоном*/
+div.navButton {
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #904242;
+    border-radius: 300px;
+}
+a.linkTo {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*Также через flex сделал приветствие на сайте*/
+div.greetings {
+    display: flex;
+    width: 70vw;
+    height: 16.8vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    top: 30vh;
+    left: 15vw;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+/*Отдельно верхний блок с приветсвием и нижний, также в каждом текстовом блоке корректировал line-height взависимости от места применения*/
+div.h1Title {
+    width: 100%;
+    height: 12.15vh;
+    text-align: center;
+    font-size: 4.6vw;
+    line-height: 12.2vh;
+    background: #423030;
+    border-radius: 200px;
+}
+div.h2Title {
+    width: 60%;
+    height: 6.25vh;
+    text-align: center;
+    margin-top: 0.5vh;
+    font-size: 2vw;
+    line-height: 6.1vh;
+    background: #2D1E1E;
+    border-radius: 200px;
+}
+/*Начало раюоты с основным блоком, также весь блок через flex*/
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: absolute;
+    width: 70vw;
+    height: 195vh;
+    left: 15vw;
+    top: 90vh;
+}
+.mainTitle {
+    width: 100%;
+    height: 11.2vh;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 4.5vw;
+    line-height: 14vh;
+    text-align: center;
+    margin: 0;
+}
+.element-animation {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+.type1, .type2 {
+    margin-top: 5.56vh;
+    width: 100%;
+    height: 35vh;
+}
+.imgMain {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+div.type1 > img {
+    float: left;
+    margin-right: 5vw;
+}
+div.type2 > img {
+    float: right;
+    margin-left: 5vw;
+}
+/*Заголовки одним шрифтом а сам текст другим*/
+h3.mHead {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 2.1vw;
+    line-height: 3vw;
+    margin: 0;
+}
+p.mText {
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9vw;
+    line-height: 4.5vh;
+    margin: 0;
+}
+/*Кнопка по аналогии с кнопками сверху*/
+a.linkToOrder {
+    background: #904242;
+    border-radius: 300px;
+    width: 30%;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    text-align: center;
+    margin: 5.56vh 20% 0 20%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.lines {
+    margin-top: 4vh;
+}
+/*Весь футер состоит из информации разработчика и социальной информации первое было реализовано через xml, а второе через flex*/
+footer {
+    position: absolute;
+    width: 98%;
+    height: 17.5vh;
+    top: 285vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-top: 1.5vh;
+}
+informationXML {
+    width: 14vw;
+    height: 100%;
+    opacity: 70%;
+    font-size: 1.3vw;
+    float: right;
+    color: #636363;
+}
+.socialsAndTelephones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 30vw;
+    height: 14.5vh;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+.socialMediaDiv {
+    width: 14vw;
+}
+/*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+.socialImage {
+    width: 2.1vw;
+    height: 2.1vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 1vw;
+}
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+    nav{
+        display: flex;
+        height: 45px;
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 30px;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        margin-top: 40px;
+        color: #FFFFFF;
+    }
+    /*Кнопки - это гиперссылки с фоном*/
+    div.navButton {
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        background: #904242;
+        border-radius: 300px;
+    }
+    div.h1Title {
+        width: 100%;
+        height: 12.15vh;
+        text-align: center;
+        font-size: 60px;
+        line-height: 12.2vh;
+        background: #423030;
+        border-radius: 200px;
+    }
+    div.h2Title {
+        width: 60%;
+        height: 6.25vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        font-size: 30px;
+        line-height: 6.1vh;
+        background: #2D1E1E;
+        border-radius: 200px;
+    }
+    .mainTitle {
+        width: 100%;
+        height: 11.2vh;
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 850;
+        font-size: 50px;
+        line-height: 14vh;
+        text-align: center;
+        margin: 0;
+    }
+    .imgMain {
+        width: 50%;
+        height: 80%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+    h3.mHead {
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 850;
+        font-size: 27px;
+        line-height: 35px;
+        margin: 0;
+    }
+    p.mText {
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0;
+    }
+    a.linkToOrder {
+        background: #904242;
+        border-radius: 300px;
+        width: 30%;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        margin: 5.56vh 20% 0 20%;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    footer {
+        width: 98%;
+        height: 17.5vh;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 1.5vh;
+    }
+    informationXML {
+        width: 20%;
+        height: 100%;
+        opacity: 70%;
+        font-size: 24px;
+        float: right;
+        color: #636363;
+    }
+    .socialsAndTelephones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 50%;
+        height: 14.5vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .socialMediaDiv {
+        width: 48%;
+        height: 40px;
+    }
+    /*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+    .socialImage {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        float: left;
+        margin-right: 1vw;
+    }
+}

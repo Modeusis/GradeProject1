@@ -1,0 +1,218 @@
+body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    background: #FAFAFA;
+}
+header {
+    width: 100%;
+    height: 5.5vh;
+    background: #855757;
+}
+svg.arrow {
+    position: absolute;
+    top: 1.2vh;
+    left: 1vw;
+    width: 3vh;
+    height: 3vh;
+}
+div.headTitle {
+    text-align: center;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 5vh;
+    color: #FFFFFF;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+main {
+    position: absolute;
+    width: 99%;
+    margin: 1vh 0 0 1vw;
+}
+div.formName {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 4vh;
+    color: #000000;
+}
+form {
+    display: table;
+    margin-top: 2vh;
+}
+div.formRow {
+    display: table-row;
+}
+label, input[type="text"], select {
+    display: table-cell;
+}
+label {
+    padding-right: 4vw;
+    padding-bottom: 1.5vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    color: #000000;
+}
+input[type="text"], select {
+    width: 18vw;
+    height: 3vh;
+    font-family: 'Didact Gothic', serif;
+    border-radius: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: #7A7A7A;
+}
+select {
+    height: 4vh;
+}
+a[type="submit"] {
+    appearance: none;
+    border: 0;
+    border-radius: 300px;
+    background: #904242;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Didact Gothic', serif;
+    padding: 0.4vw 1.25vw;
+    font-size: 1.3vw;
+    margin: 1vh 0 0 0;
+}
+footer {
+    position: absolute;
+    width: 98%;
+    height: 17.5vh;
+    top: 80.5vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-top: 1.5vh;
+}
+informationXML {
+    width: 14vw;
+    height: 100%;
+    opacity: 70%;
+    font-size: 1.3vw;
+    float: right;
+    color: #636363;
+}
+.socialsAndTelephones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 30vw;
+    height: 14.5vh;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+.socialMediaDiv {
+    width: 14vw;
+}
+/*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+.socialImage {
+    width: 2.1vw;
+    height: 2.1vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 1vw;
+}
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+    div.formName {
+        font-size: 60px;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 10px;
+        width: 40%;
+        margin-left: 30%;
+    }
+    div.formRow {
+        display: block;
+        width: 100%;
+    }
+    label, input[type="text"], select {
+        display: block;
+    }
+    input[type="text"], select {
+        width: 100%;
+        height: 50px;
+        font-family: 'Didact Gothic', serif;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: #7A7A7A;
+    }
+    a[type="submit"] {
+        appearance: none;
+        border: 0;
+        border-radius: 300px;
+        background: #904242;
+        color: #fff;
+        padding: 20px 40px;
+        font-size: 40px;
+        margin: 20px 0 0 0;
+    }
+    label {
+        padding-right: 0;
+        padding-bottom: 10px;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        color: #000000;
+    }
+    select {
+        height: 50px;
+    }
+    footer {
+        width: 98%;
+        height: 17.5vh;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 1.5vh;
+    }
+    informationXML {
+        width: 20%;
+        height: 100%;
+        opacity: 70%;
+        font-size: 24px;
+        float: right;
+        color: #636363;
+    }
+    .socialsAndTelephones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 50%;
+        height: 14.5vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .socialMediaDiv {
+        width: 48%;
+        height: 40px;
+    }
+    /*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+    .socialImage {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        float: left;
+        margin-right: 1vw;
+    }
+}
+

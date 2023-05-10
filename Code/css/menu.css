@@ -1,0 +1,246 @@
+body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    background: #FAFAFA;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5.5vh;
+    background: #855757;
+}
+svg.arrow {
+    position: absolute;
+    top: 1.2vh;
+    left: 1vw;
+    width: 3vh;
+    height: 3vh;
+}
+div.headTitle {
+    text-align: center;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 5vh;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 70vw;
+    margin-left: 15vw;
+    padding-top: 5.5vh;
+}
+div.bigTitle {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin: 1.8vh 0 0 0;
+}
+div.partOfMenu {
+    width: 100%;
+    display: table;
+    margin-top: 2vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+}
+h2 {
+    width: 100%;
+    text-align: left;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+}
+h3 {
+    width: 100%;
+    text-align: left;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+}
+div.tableRow {
+    display: table-row;
+}
+div[class^="dish"] {
+    display: table-cell;
+}
+.dishName {
+    padding-right: 200px;
+}
+.dishWeight {
+    padding-right: 100px;
+}
+div.buttonToPage {
+    width: 22%;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    background: #904242;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+svg.lines {
+    margin-top: 15px;
+    width: 60vw;
+    height: 4vh;
+}
+footer {
+    width: 98%;
+    height: 17.5vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-top: 1.5vh;
+}
+informationXML {
+    width: 14vw;
+    height: 100%;
+    opacity: 70%;
+    font-size: 1.3vw;
+    float: right;
+    color: #636363;
+}
+.socialsAndTelephones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 30vw;
+    height: 14.5vh;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+.socialMediaDiv {
+    width: 14vw;
+}
+/*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+.socialImage {
+    width: 2.1vw;
+    height: 2.1vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 1vw;
+}
+@media screen and (min-width: 100px) and (max-width: 1400px){
+    div.partOfMenu {
+        width: 100%;
+        display: table;
+        margin-top: 0;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    h2 {
+        width: 100%;
+        text-align: left;
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 850;
+        font-size: 35px;
+        color: #000000;
+        margin: 0;
+    }
+    h3 {
+        width: 100%;
+        text-align: left;
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 850;
+        font-size: 25px;
+        color: #000000;
+        margin: 0;
+    }
+    .dishName {
+        padding-right: 100px;
+    }
+    .dishWeight {
+        padding-right: 50px;
+    }
+    div.buttonToPage {
+        width: 22%;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        background: #904242;
+        border-radius: 300px;
+        margin-top: 30px;
+    }
+    svg.lines {
+        margin-top: 15px;
+        width: 60vw;
+        height: 4vh;
+    }
+    footer {
+        width: 98%;
+        height: 17.5vh;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 1.5vh;
+    }
+    informationXML {
+        width: 20%;
+        height: 100%;
+        opacity: 70%;
+        font-size: 24px;
+        float: right;
+        color: #636363;
+    }
+    .socialsAndTelephones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 50%;
+        height: 14.5vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .socialMediaDiv {
+        width: 48%;
+        height: 40px;
+    }
+    /*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+    .socialImage {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        float: left;
+        margin-right: 1vw;
+    }
+}

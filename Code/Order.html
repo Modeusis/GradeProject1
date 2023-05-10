@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Заказ</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <svg class="arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.534253 1.07553C0.48536 1.19344 0.458374 1.32272 0.458374 1.45831V1.45849V33.5416C0.458374 34.0939 0.906089 34.5416 1.45837 34.5416C2.01066 34.5416 2.45837 34.0939 2.45837 33.5416V3.87253L32.8346 34.2488C33.2251 34.6393 33.8583 34.6393 34.2488 34.2488C34.6393 33.8582 34.6393 33.2251 34.2488 32.8345L3.87259 2.45831H33.5417C34.094 2.45831 34.5417 2.0106 34.5417 1.45831C34.5417 0.906029 34.094 0.458313 33.5417 0.458313H1.45837C1.18331 0.458313 0.934185 0.569369 0.753391 0.749089C0.751973 0.750499 0.750559 0.751912 0.74915 0.75333C0.654325 0.848714 0.582693 0.958455 0.534253 1.07553Z" fill="white"/>
+            </svg>
+        </a>
+        <div class="headTitle">Кафе Алекс</div>
+    </header>
+    <main>
+        <div class="formName">Ваш заказ</div>
+        <form>
+            <div class="formRow">
+                <label for="name">Имя</label>
+                <input type="text" id="name">
+            </div>
+            <div class="formRow">
+                <label for="phoneNumber">Номер телефона</label>
+                <input type="text" id="phoneNumber">
+            </div>
+            <div class="formRow">
+                <label for="type">Тип заказа</label>
+                <select id="type">
+                    <option>День рождения</option>
+                    <option>Свадьба</option>
+                    <option>Корпоратив</option>
+                    <option>Похороны</option>
+                    <option>Поминки</option>
+                    <option>Другое</option>
+                </select>
+            </div>
+            <a href="orderConfirmed.html" type="submit" >Заказать</a>
+        </form>
+    </main>
+    <footer>
+        <div class="devInfo">
+            <XML ID="info">
+                <?xml version="1.0"?>
+                <informationXML>
+                    <companyName>ЧТУП"ЛинЛарПрод"</companyName>
+                    <developEmail>Email разработчика: lhodanenok@mail.ru</developEmail>
+                    <developNickname>Никнейм разработчика: Modeus</developNickname>
+                </informationXML>
+            </XML>
+        </div>
+        <div class="socialsAndTelephones">
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/A1Icon.jpg" alt="">
+                <div class="socialInfo">8 (029) 618-13-99</div>
+            </div>
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/emailIcon.png" alt="">
+                <div class="socialInfo">linlar@tut.by</div>
+            </div>
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/mtsIcon.png" alt="">
+                <div class="socialInfo">8 (029) 893-47-97</div>
+            </div>
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/vkIcon.png" alt="">
+                <div class="socialInfo">vk.com/alexkafe</div>
+            </div>
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/phoneIcon.png" alt="">
+                <div class="socialInfo">8 (021) 544-30-50</div>
+            </div>
+            <div class="socialMediaDiv">
+                <img class="socialImage" src="../Media/instIcon.png" alt="">
+                <div class="socialInfo">@kafee_alex</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

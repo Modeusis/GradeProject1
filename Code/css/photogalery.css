@@ -1,0 +1,216 @@
+body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    background: #FAFAFA;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5.5vh;
+    background: #855757;
+}
+svg.arrow {
+    position: absolute;
+    top: 1.2vh;
+    left: 1vw;
+    width: 3vh;
+    height: 3vh;
+}
+div.headTitle {
+    text-align: center;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 5vh;
+    color: #FFFFFF;
+    margin: 0 0;
+    height: 100%;
+    width: 100%;
+}
+div.mainTitle {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 850;
+    font-size: 64px;
+    line-height: 93px;
+    color: #000000;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 70vw;
+    margin-left: 15vw;
+    padding-top: 5.5vh;
+}
+div[class^="typeOfImages"] {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #000000;
+}
+div[class^="flexTitle"] {
+    width: 100%;
+}
+img[class^="imgFlex"]{
+    height: 400px;
+    margin-top: 50px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px black;
+}
+img.imgFlex3, img.imgFlex8, img.imgFlex21 {
+    height: 800px;
+    width: 100%;
+}
+.imgFlex1, .imgFlex5, .imgFlex10, .imgFlex15, .imgFlex19 {
+    width: 58%;
+}
+.imgFlex2, .imgFlex4, .imgFlex9, .imgFlex16, .imgFlex20 {
+    width: 40%;
+}
+.imgFlex6, .imgFlex7, .imgFlex11, .imgFlex12, .imgFlex17, .imgFlex18 {
+    width: 49%;
+}
+.imgFlex13 {
+    width: 30%;
+}
+.imgFlex14 {
+    width: 68%;
+}
+div.buttonToPage {
+    width: 22%;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    background: #904242;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+svg.lines {
+    margin-top: 15px;
+    width: 60vw;
+    height: 4vh;
+}
+footer {
+    width: 98%;
+    height: 17.5vh;
+    font-family: 'Didact Gothic', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-top: 1.5vh;
+}
+informationXML {
+    width: 14vw;
+    height: 100%;
+    opacity: 70%;
+    font-size: 1.3vw;
+    float: right;
+    color: #636363;
+}
+.socialsAndTelephones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 30vw;
+    height: 14.5vh;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+.socialMediaDiv {
+    width: 14vw;
+}
+/*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+.socialImage {
+    width: 2.1vw;
+    height: 2.1vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 1vw;
+}
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+    img[class^="imgFlex"]{
+        height: 600px;
+        width: 100%;
+        margin-top: 30px;
+        object-fit: cover;
+        box-shadow: 0 8px 15px black;
+    }
+    div.buttonToPage {
+        width: 22%;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        background: #904242;
+        border-radius: 300px;
+        margin-top: 30px;
+    }
+    svg.lines {
+        margin-top: 15px;
+        width: 60vw;
+        height: 4vh;
+    }
+    footer {
+        width: 98%;
+        height: 17.5vh;
+        font-family: 'Didact Gothic', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 1.5vh;
+    }
+    informationXML {
+        width: 20%;
+        height: 100%;
+        opacity: 70%;
+        font-size: 24px;
+        float: right;
+        color: #636363;
+    }
+    .socialsAndTelephones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 50%;
+        height: 14.5vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .socialMediaDiv {
+        width: 48%;
+        height: 40px;
+    }
+    /*Для всех изображений использовал object-fit: cover; что бы вместо растяжения изображение обрезалось*/
+    .socialImage {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        float: left;
+        margin-right: 1vw;
+    }
+}
